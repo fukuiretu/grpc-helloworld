@@ -1,0 +1,14 @@
+syntax = "proto3";
+package gprc_hellowworld;
+
+service HelloworldService {
+    rpc hello(HelloworldRequest) returns (HelloworldResponse) {}
+}
+
+message HelloworldRequest {
+    string msg = 1;
+}
+
+message HelloworldResponse {
+    string msg = 1;
+}
