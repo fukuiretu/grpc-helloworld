@@ -1,5 +1,5 @@
 syntax = "proto3";
-package gprc_hellowworld;
+package gprc_helloworld;
 
 service HelloworldService {
     rpc hello(HelloworldRequest) returns (HelloworldResponse) {}

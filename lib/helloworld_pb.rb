@@ -4,15 +4,15 @@
 require 'google/protobuf'
 
 Google::Protobuf::DescriptorPool.generated_pool.build do
-  add_message "gprc_hellowworld.HelloworldRequest" do
+  add_message "gprc_helloworld.HelloworldRequest" do
     optional :msg, :string, 1
   end
-  add_message "gprc_hellowworld.HelloworldResponse" do
+  add_message "gprc_helloworld.HelloworldResponse" do
     optional :msg, :string, 1
   end
 end
 
-module GprcHellowworld
-  HelloworldRequest = Google::Protobuf::DescriptorPool.generated_pool.lookup("gprc_hellowworld.HelloworldRequest").msgclass
-  HelloworldResponse = Google::Protobuf::DescriptorPool.generated_pool.lookup("gprc_hellowworld.HelloworldResponse").msgclass
+module GprcHelloworld
+  HelloworldRequest = Google::Protobuf::DescriptorPool.generated_pool.lookup("gprc_helloworld.HelloworldRequest").msgclass
+  HelloworldResponse = Google::Protobuf::DescriptorPool.generated_pool.lookup("gprc_helloworld.HelloworldResponse").msgclass
 end
